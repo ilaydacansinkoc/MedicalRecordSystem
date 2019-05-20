@@ -3,13 +3,13 @@
 The project: A medical record system with role‐based access control
 
 Description:
- The project will involve a database of medical records accessible by doctor(s),
+ The project will involve a database of medical records accessible by doctor(s),
 patient, nurse(s), and relatives.
 
- The records shall be created by the doctors (fictitious records, all 256 characters long,
+ The records shall be created by the doctors (fictitious records, all 256 characters long,
 including the name (first and last), birth date and the diagnostics for the patient)
 
- The data base will have a password‐controlled access control system
+ The data base will have a password‐controlled access control system
     
 o All doctors will have access using user defined user‐name and password, of
 course the administration should verify that they are really doctors.
@@ -25,7 +25,7 @@ o The relatives will be defined to the system by the patients.
 
 o The passwords should be stored using SHA‐256 hashing.
 
- Accessing the records will be as follows:
+ Accessing the records will be as follows:
     o Doctors will have access to all the records of all patients, but authorization
 will be given by the patients.
     o Patients will only access to their own records.
@@ -33,7 +33,7 @@ will be given by the patients.
     o Nurses will be authorized by the doctors, they can only access to records for
       which the doctor has the authority.
       
- The records will be transmitted between doctors’ offices using symmetric key
+ The records will be transmitted between doctors’ offices using symmetric key
 cryptography of your choice.
 
- The software should have a different user interface for users and admin.
+ The software should have a different user interface for users and admin.
